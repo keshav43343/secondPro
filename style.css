@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://wallpapercave.com/wp/wp10651219.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+
+nav{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo{
+    width: 60px;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+.login-btn{
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px ;
+    color: #fff;
+    background-image: linear-gradient(47deg, #df4881, #c430d7);
+    border-radius: 40px ;
+    border-top-right-radius:0px ;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.btn:hover{
+    border-top-right-radius: 40px ;
+}
+
+.content{
+    margin-top:15% ;
+    max-width: 600px;
+}
+
+.content h1{
+    font-size: 70px;
+    line-height: 1.2;
+    color: #222;
+    margin-bottom: 50px;
+}
+
+span{
+    display: block;
+
+}
+
+.content p{
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #333;
+    animation-delay: .5s;
+}
+
+.content .btn{
+    padding: 15px 80px;
+    font-size: 18px;
+    animation-delay: 1s;
+}
+
+.featured-img{
+    width: 300px;
+    /* height: 600px; */
+    position: absolute;
+    right: 15%;
+    bottom: 0;
+}
+
+
+.featured-img.animate{
+    animation-delay: 1s;
+    /* animation: moveup .5s linear forwards; */
+}
+
+
+.animate{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup .5s linear forwards;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 100%;
+        transform: translateY(0px);
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav a {
+        display: none;
+    }
+    
+
+    .btn{
+        font-size: 10px;
+        z-index: 2;
+        /* position: absolute; */
+        position: relative;
+    }
+
+    .featured-img{
+        width: 300px;
+        /* height: 600px; */
+        position: absolute;
+        right: 15%;
+        bottom: 0;
+        opacity: 70%;
+        animation: none;
+    }
+    
+        
+    }
+
+    .content{
+        z-index: 2;
+        position: relative;
+    }
+
+   
